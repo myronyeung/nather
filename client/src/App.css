@@ -1,0 +1,53 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-row {
+  margin-bottom: 10px;
+}
+
+.room-input {
+  margin-right: 10px;
+  width: 15rem;
+}
+
+.message-input {
+  margin-right: 10px;
+  width: 15rem;
+  height: 4rem;
+}
+
+.messages {
+  list-style-type: none;
+}
+
+.messages li {
+  display: flex;
+}
+
+.messages li * {
+  margin-bottom: 5px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.messages li .date {
+  margin-right: 10px;
+  font-style: italic;
+}
+
+.messages li .room {
+  margin-right: 10px;
+}
+
+.messages li .room::before {
+  content: "[";
+}
+
+.messages li .room::after {
+  content: "]";
+}
